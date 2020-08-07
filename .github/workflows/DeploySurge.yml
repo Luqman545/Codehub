@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: Ubuntu-latest
+    runs-on: Ubuntu 20.04.1
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -34,4 +34,4 @@ jobs:
       
     # Deploy App to Surge
     - name: Deploying project to Surge
-      run: surge ./ luqman_jsprojects.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./ luqmanmxl267_jsprojects.surge.sh --token ${{ secrets.SURGE_TOKEN }}
